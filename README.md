@@ -1,14 +1,14 @@
 ## Liga e/ou Desliga DEBUG em tempo de execução.
 
 
-### Altere o app_local
+### app_local
 
 no arquivo `config/app_local.php` mudar a linha do debug para
 ```php
 'debug' => file_exists(TMP.'/debug_on') ? true : false,
 ```
 
-### Cria a função debug
+### Função debug
 no arquivo src/Controller/AppController.php, acrescentar a seguinte função:
 
 ```php
@@ -36,7 +36,7 @@ public function debug()
 ```
 * Colocando a função no `AppController` qualquer outro controlador vai poder ligar/desligar o `debug`.
 
-### Crie uma rota como:
+### Rota:
 No arquivo config/routes acrescente a linha:
 
 ```php
@@ -44,6 +44,6 @@ $builder->connect('/debug', ['controller' => 'Painel', 'action'=>'debug'] );
 ```
 * Utilize o `controller` de sua preferência, mas se a função ficou no `AppController`, qualquer outro controller vai executar a função.
 
-### Agora basta acessar
+### Teste
 
 http://dominio.com.br/debug, ele vai ligar e/ou desligar o `debug`.
