@@ -51,4 +51,4 @@ $builder->connect('/debug', ['controller' => 'Painel', 'action'=>'debug'] );
 
 ### Agora basta acessar
 
-http://dominio.com.br/debug, ele vai ligar e/ou desligar o debug.
+http://dominio.com.br/debug, ele vai ligar e/ou desligar o `debug`.
