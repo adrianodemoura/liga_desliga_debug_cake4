@@ -35,7 +35,9 @@ public function debug()
 
 ### Crie uma rotao como:
 
+```php
 $builder->connect('/debug', ['controller' => 'Painel', 'action'=>'debug'] );
+```
 
 utilize o controller de sua preferência
 
@@ -43,8 +45,9 @@ colocando a função no AppController qualquer outro controlador vai poder ligar
 
 recomendável criar a rota como:
 
+```php
 $builder->connect('/debug', ['controller' => 'Painel', 'action'=>'debug'] );
-
+```
 
 ### Agora basta acessar
 
