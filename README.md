@@ -3,8 +3,9 @@
 ### Altere o app_local
 
 no arquivo config/app_local.php mudar a linha do debug para
-
+```php
 'debug' => file_exists(TMP.'/debug_on') ? true : false,
+```
 
 ### Cria a função debug
 no arquivo src/Controller/AppController.php, acrescentar a seguinte função:
