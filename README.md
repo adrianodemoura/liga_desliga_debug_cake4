@@ -3,7 +3,7 @@
 
 ### Altere o app_local
 
-no arquivo config/app_local.php mudar a linha do debug para
+no arquivo `config/app_local.php` mudar a linha do debug para
 ```php
 'debug' => file_exists(TMP.'/debug_on') ? true : false,
 ```
@@ -34,7 +34,7 @@ public function debug()
     return $this->redirect( '/' );
 }
 ```
-* Colocando a função no AppController qualquer outro controlador vai poder ligar/desligar o debug.
+* Colocando a função no `AppController` qualquer outro controlador vai poder ligar/desligar o `debug`.
 
 ### Crie uma rotao como:
 
