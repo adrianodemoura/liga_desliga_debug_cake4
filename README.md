@@ -36,17 +36,13 @@ public function debug()
 ```
 * Colocando a função no `AppController` qualquer outro controlador vai poder ligar/desligar o `debug`.
 
-### Crie uma rotao como:
+### Crie uma rota como:
+No arquivo config/routes acrescente a linha:
 
 ```php
 $builder->connect('/debug', ['controller' => 'Painel', 'action'=>'debug'] );
 ```
-
-recomendável criar a rota como:
-
-```php
-$builder->connect('/debug', ['controller' => 'Painel', 'action'=>'debug'] );
-```
+* Utilize o `controller` de sua preferência, mas se a função ficou no `AppController`, qualquer outro controller vai executar a função.
 
 ### Agora basta acessar
 
